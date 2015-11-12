@@ -26,6 +26,7 @@
     [[NSUserDefaults standardUserDefaults]synchronize];
     
     
+    NSLog(@"this is updated project");
     
     self.title=@"Feedback Form";
     // Do any additional setup after loading the view from its nib.
