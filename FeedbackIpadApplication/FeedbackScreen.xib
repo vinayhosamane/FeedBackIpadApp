@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackScreen">
+            <connections>
+                <outlet property="average" destination="B1H-2v-onF" id="hhF-c0-sgV"/>
+                <outlet property="bad" destination="Ymx-IF-Fou" id="LQx-hL-F6i"/>
+                <outlet property="good" destination="oC6-de-4TV" id="g2k-1k-7Zk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="gBR-Be-z2S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Production_1920x1440.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VNK-cT-Ul4">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDu-Bq-7nb">
+                    <rect key="frame" x="628" y="75" width="51" height="30"/>
+                    <state key="normal" title=".">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reportAction:" destination="-1" eventType="touchUpInside" id="J0x-jl-u94"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZS-mq-fq7">
+                    <rect key="frame" x="696" y="75" width="46" height="30"/>
+                    <state key="normal" title=".">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clearAction:" destination="-1" eventType="touchUpInside" id="DrO-9S-Xq7"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oss-Bs-RbK">
+                    <rect key="frame" x="54" y="400" width="660" height="224"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3XY-Pr-AiK">
+                            <rect key="frame" x="22" y="20" width="206" height="184"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Poor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-sa-ISt">
+                                    <rect key="frame" x="76" y="141" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymx-IF-Fou">
+                                    <rect key="frame" x="35" y="7" width="124" height="133"/>
+                                    <state key="normal" image="baddy.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="badAction:" destination="-1" eventType="touchUpInside" id="use-WH-Xza"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooV-nb-ecm">
+                            <rect key="frame" x="244" y="20" width="206" height="184"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1H-2v-onF">
+                                    <rect key="frame" x="41" y="5" width="124" height="132"/>
+                                    <state key="normal" image="average.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="averageAction:" destination="-1" eventType="touchUpInside" id="nU4-TI-Eey"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Average" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIC-17-NDe">
+                                    <rect key="frame" x="71" y="146" width="76" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaC-FH-tav">
+                            <rect key="frame" x="465" y="20" width="206" height="184"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFO-Hr-QfH">
+                                    <rect key="frame" x="78" y="148" width="50" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC6-de-4TV">
+                                    <rect key="frame" x="47" y="7" width="123" height="133"/>
+                                    <state key="normal" image="gooddy.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="goodAction:" destination="-1" eventType="touchUpInside" id="ONN-Yj-egc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="224" id="Vj4-t1-RIp"/>
+                        <constraint firstAttribute="width" constant="660" id="pNu-uq-HDz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="Oss-Bs-RbK" secondAttribute="centerY" id="0Il-FS-lFE"/>
+                <constraint firstAttribute="bottom" secondItem="VNK-cT-Ul4" secondAttribute="bottom" id="Nyp-uf-Cqn"/>
+                <constraint firstItem="VNK-cT-Ul4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZM0-08-ckl"/>
+                <constraint firstItem="VNK-cT-Ul4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aCs-hE-Fuk"/>
+                <constraint firstAttribute="trailing" secondItem="VNK-cT-Ul4" secondAttribute="trailing" id="n55-KF-M1F"/>
+                <constraint firstAttribute="centerX" secondItem="Oss-Bs-RbK" secondAttribute="centerX" id="r1A-k0-CXF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <point key="canvasLocation" x="172" y="163"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Production_1920x1440.jpg" width="1920" height="1440"/>
+        <image name="average.png" width="124" height="132"/>
+        <image name="baddy.png" width="124" height="133"/>
+        <image name="gooddy.png" width="123" height="133"/>
+    </resources>
+</document>
